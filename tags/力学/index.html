@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="物理竞赛题库">
+    <meta name="keywords" content="标签: 力学, 物理竞赛题库">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>物理竞赛题库</title>
+    <title>标签: 力学 | 物理竞赛题库</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpeg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,56 +307,9 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -382,285 +335,54 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/jinhao0113/" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/jinhao0113" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:photk@jinhao365.onmicrosoft.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3200985003" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3200985003" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-    });
-</script>
-
-
 
 <main class="content">
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
 
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/%E6%8C%AF%E5%8A%A8%E4%B8%8E%E6%B3%A2/" title="振动与波: 6">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="振动与波" style="background-color: #F9EBEA;">振动与波
+                        <span class="tag-length">6</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%8A%9B%E5%AD%A6/" title="力学: 6">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="力学" style="background-color: #F5EEF8;">力学
+                        <span class="tag-length">6</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
-    
+</div>
 
     
 
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/02/nlcs-7-a-3/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 3">
-                            
-                            <span class="card-title">《物理竞赛能力测试》第七章 A卷 3</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                《物理竞赛能力测试》第七章 A卷 3题面一座金字塔形 (正四棱倠) 冰山漂浮在海水中, 平衡时塔顶离水面高为 $h$, 冰 第 2 题图 的密度和水的密度分别为 $\rho_{1} 、 \rho_{2}$ 。(1) 计算冰山自身高度 $H$
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                JinhaoHu
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8C%AF%E5%8A%A8%E4%B8%8E%E6%B3%A2/">
-                            <span class="chip bg-color">振动与波</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8A%9B%E5%AD%A6/">
-                            <span class="chip bg-color">力学</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/02/nlcs-7-a-5/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 5">
-                            
-                            <span class="card-title">《物理竞赛能力测试》第七章 A卷 5</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                《物理竞赛能力测试》第七章 A卷 5题面
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                JinhaoHu
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8C%AF%E5%8A%A8%E4%B8%8E%E6%B3%A2/">
-                            <span class="chip bg-color">振动与波</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8A%9B%E5%AD%A6/">
-                            <span class="chip bg-color">力学</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/02/nlcs-7-a-4/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 4">
-                            
-                            <span class="card-title">《物理竞赛能力测试》第七章 A卷 4</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                《物理竞赛能力测试》第七章 A卷 4题面一根劲度系数为 $k$ 的弹簧, 弹簧下端连有一质量为 $m_1$的小物块, 若给小一微扰, 求此系统振荡频率。
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                JinhaoHu
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8C%AF%E5%8A%A8%E4%B8%8E%E6%B3%A2/">
-                            <span class="chip bg-color">振动与波</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8A%9B%E5%AD%A6/">
-                            <span class="chip bg-color">力学</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-tags="振动与波, 力学" data-aos="fade-up">
                 <div class="card">
                     <a href="/2022/05/02/nlcs-7-a-6/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 6">
@@ -668,13 +390,7 @@
                             <span class="card-title">《物理竞赛能力测试》第七章 A卷 6</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                《物理竞赛能力测试》第七章 A卷 6题面一房屋坐落在一条东西方向公路的南面距公路 $100 \mathrm{~m}$ 的地方, 屋内的电视机正在接收远处电视台的信号, 信号频率为 $60 \mathrm{MHz}$, 方向如图所示, 一汽车
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
@@ -687,27 +403,98 @@
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8C%AF%E5%8A%A8%E4%B8%8E%E6%B3%A2/">
-                            <span class="chip bg-color">振动与波</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8A%9B%E5%AD%A6/">
-                            <span class="chip bg-color">力学</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="振动与波, 力学" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2022/05/02/nlcs-7-a-4/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 4">
+                            
+                            <span class="card-title">《物理竞赛能力测试》第七章 A卷 4</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                JinhaoHu
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="振动与波, 力学" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2022/05/02/nlcs-7-a-5/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 5">
+                            
+                            <span class="card-title">《物理竞赛能力测试》第七章 A卷 5</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                JinhaoHu
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="振动与波, 力学" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2022/05/02/nlcs-7-a-3/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 3">
+                            
+                            <span class="card-title">《物理竞赛能力测试》第七章 A卷 3</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                JinhaoHu
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="振动与波, 力学" data-aos="fade-up">
                 <div class="card">
                     <a href="/2022/05/02/nlcs-7-a-2/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 2">
@@ -715,13 +502,7 @@
                             <span class="card-title">《物理竞赛能力测试》第七章 A卷 2</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                《物理竞赛能力测试》第七章 A卷 2题面如图所示,用三根竖直的长度相同且不可伸长的细轻绳将一个细圆环水平环上拴皅点彼此距离相等。现借助一些重量不计的辐条,固定于将一与环心处,试求环的微小扭转振动周期变化了几倍?一座金字塔形 (正四棱雉) 冰
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
@@ -734,27 +515,14 @@
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8C%AF%E5%8A%A8%E4%B8%8E%E6%B3%A2/">
-                            <span class="chip bg-color">振动与波</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8A%9B%E5%AD%A6/">
-                            <span class="chip bg-color">力学</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="振动与波, 力学" data-aos="fade-up">
                 <div class="card">
                     <a href="/2022/05/02/nlcs-7-a-1/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="《物理竞赛能力测试》第七章 A卷 1">
@@ -762,14 +530,7 @@
                             <span class="card-title">《物理竞赛能力测试》第七章 A卷 1</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                《物理竞赛能力测试》第七章 A卷 1题面如图所示, 弹簧与细绳质量可忽略, 不计摩擦, $m_{1} 、 m_{2} 、 M$ 及 $k$ 均为已知量。设 细绳足够长, 试求滑轮的振动周期。
-答案列出各物体牛顿运动定律方程$$\begin{
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2022-05-02
@@ -782,61 +543,11 @@
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8C%AF%E5%8A%A8%E4%B8%8E%E6%B3%A2/">
-                            <span class="chip bg-color">振动与波</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8A%9B%E5%AD%A6/">
-                            <span class="chip bg-color">力学</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/04/02/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                JinhaoHu
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
                 </div>
             </div>
             
         </div>
     </article>
-
 </main>
 
 
